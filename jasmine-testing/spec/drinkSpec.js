@@ -44,7 +44,7 @@ describe("My whatCanIDrink function", function() {
             expect(result).toBe("Sorry. I can’t tell what drink because that age is incorrect!");
         });
         
-        it("should contain Drink when called as whatCanIDrink(17)", function() {
+        it("should contain Drink when called as whatCanIDrink(less than 0)", function() {
             var result = whatCanIDrink(10).indexOf("Drink");
             expect(result).not.toEqual(-1);
         });
