@@ -1,9 +1,11 @@
 
 describe ("whatCanIDrink", function() {
     describe ("age tests", function() {
-        it ("should create a new string with either single or double quotes", 
-            function() {
-                  expect("Sorry. I can’t tell what drink because that age is incorrect!").toEqual(null);
-               });
-});
+        it ("should return msg for under 14", function() {
+            expect(whatCanIDrink(1)).toBe("Drink Toddy"); 
+         });
+         it ("should return msg for under 18", function() {
+            expect(whatCanIDrink(17)).toBe("Drink Coke"); 
+         });
+    });
 });
